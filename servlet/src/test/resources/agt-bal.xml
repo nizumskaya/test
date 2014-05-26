@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<request>
+ <request-type>agt-bal</request-type>
+ <login>1234567890</login> 
+ <password>password</password> 
+</request>
