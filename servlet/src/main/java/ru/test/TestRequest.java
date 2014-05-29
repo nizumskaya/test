@@ -2,7 +2,6 @@ package ru.test;
 
 import java.io.Serializable;
 
-
 public class TestRequest implements Serializable {
 
 	private static final long serialVersionUID = -877042686751004831L;

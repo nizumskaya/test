@@ -39,7 +39,7 @@ public class CustomerImpl implements Customer {
 			con.rollback();
 			if (ex.getErrorCode() == 0)
 				return ResponseErrorCodes.ERROR_1.getErrorCode();
-			log.error("Error adding of customer. ", ex);
+			log.error(TestConstants.ExceptionMessages.ERROR_ADDING_OF_CUSTOMER, ex);
 			return ResponseErrorCodes.ERROR_5.getErrorCode();
 		} finally {
 			if (null != pst)
@@ -54,9 +54,8 @@ public class CustomerImpl implements Customer {
 	public BigDecimal getCustomerBalance(String login, DataSource dataSource) throws SQLException {
 		Connection con = null;
 		PreparedStatement pst = null;
-		String sql = "SELECT balance.customer_balance FROM balance " + 
-			"INNER JOIN customer ON customer.id=balance.customer_id " +
-			"WHERE customer.customer_login=?";
+		String sql = "SELECT balance.customer_balance FROM balance "
+						+ "INNER JOIN customer ON customer.id=balance.customer_id " + "WHERE customer.customer_login=?";
 		try {
 			con = dataSource.getConnection();
 			con.setAutoCommit(false);
@@ -65,16 +64,20 @@ public class CustomerImpl implements Customer {
 			ResultSet res = pst.executeQuery();
 			res.next();
 			return res.getBigDecimal(1);
-		}catch(SQLException ex){
+		} catch (SQLException ex) {
 			con.rollback();
-			log.error("Error getting customer balance. ", ex);
-		}finally{
-			if(null != pst) pst.close();
-			if (null != con) con.close();
+			log.error(TestConstants.Messages.ERROR_GETTING_CUSTOMER_BALANCE, ex);
+		} finally {
+			if (null != pst)
+				pst.close();
+			if (null != con)
+				con.close();
 		}
 		return new BigDecimal(0);
 	}
 }
+
+
 
 
 

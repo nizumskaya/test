@@ -3,11 +3,11 @@ package ru.test;
 
 public enum ResponseErrorCodes {
 	
-	ERROR_0(0, "все хорошо"),
-	ERROR_1(1, "такой агент уже  зарегистрирован"),
-	ERROR_2(2, "неверный формат телефона"),
-	ERROR_3(3, "плохой пароль"), 
-	ERROR_5(5, "другая ошибка повторите позже");
+	ERROR_0(0, TestConstants.ErrorCodes.ERROR_0),
+	ERROR_1(1, TestConstants.ErrorCodes.ERROR_1),
+	ERROR_2(2, TestConstants.ErrorCodes.ERROR_2),
+	ERROR_3(3, TestConstants.ErrorCodes.ERROR_3), 
+	ERROR_5(5, TestConstants.ErrorCodes.ERROR_5);
 	
 	private int errorCode;
 	private String description;

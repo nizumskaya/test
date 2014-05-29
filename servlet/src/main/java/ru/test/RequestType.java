@@ -1,9 +1,9 @@
 package ru.test;
 
 public enum RequestType {
-	
-		NEWAGT("new-agt"),
-		AGTBAL("agt-bal");
+
+		NEWAGT(TestConstants.XMLRequestType.NEWAGT),
+		AGTBAL(TestConstants.XMLRequestType.AGTBAL);
 
 	private final String name;
 
@@ -15,6 +15,8 @@ public enum RequestType {
 	RequestType(String name){
 		this.name=name;
 	}
+	
+	
 }
 
 

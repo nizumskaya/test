@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class TestHelper {
 	
 	public static boolean verifyPhone(String phone) {
-		String pattern = "^[0-9]{10}$";
+		String pattern = TestConstants.Customer.PHONE_PATTERN;
 		return Pattern.matches(pattern, phone);
 	}
 
