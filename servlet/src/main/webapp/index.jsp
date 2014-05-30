@@ -4,6 +4,6 @@
 <%@ page import="java.util.*, java.text.*" %>
 <html>
 <body>
-<h2>Qiwi test</h2>
+<h2>Test</h2>
 </body>
 </html>

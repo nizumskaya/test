@@ -1,4 +1,4 @@
-package ru.qiwi.test;
+package ru.test;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

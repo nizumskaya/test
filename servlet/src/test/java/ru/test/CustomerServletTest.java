@@ -1,4 +1,4 @@
-package ru.qiwi.test;
+package ru.test;
 
 import java.io.File;
 import java.io.FileInputStream;

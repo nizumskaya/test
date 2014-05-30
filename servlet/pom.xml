@@ -145,7 +145,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>qiwi-test</finalName>
+		<finalName>Test</finalName>
 
 		<plugins>
 			<plugin>

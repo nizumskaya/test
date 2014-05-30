@@ -2,7 +2,7 @@
 <suite name="customer" parallel="false">
   <test name="customer">
     <classes>
-      <class name="ru.qiwi.test.CustomerServletTest"/>
+      <class name="ru.test.CustomerServletTest"/>
     </classes>
   </test>
 </suite>
