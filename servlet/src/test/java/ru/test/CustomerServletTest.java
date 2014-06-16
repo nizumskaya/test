@@ -13,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.sql.DataSource;
 
 import org.testng.annotations.Test;
+import org.apache.tomcat.jdbc.pool.DataSourceFactory;
 import org.mortbay.jetty.Server;
 import org.mortbay.jetty.servlet.Context;
 import org.mortbay.jetty.servlet.ServletHolder;
