@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="customer" parallel="false">
-  <test name="customer">
-    <classes>
-      <class name="ru.test.CustomerServletTest"/>
-    </classes>
-  </test>
-</suite>
